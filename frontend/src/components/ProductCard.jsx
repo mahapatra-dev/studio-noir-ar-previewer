@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 export default function ProductCard({ product }) {
-  const img = product.images?.[0] ? `http://localhost:5000${product.images[0]}` : null;
+const img = product.images?.[0] ? `https://studio-noir-ar-previewer.onrender.com${product.images[0]}` : null;
   return (
     <Link to={`/product/${product._id}`} className="card">
       {img ? <img src={img} alt={product.name} /> : <div style={{ height: 180, background: '#1c1c1e' }} />}

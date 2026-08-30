@@ -20,7 +20,7 @@ export default function ProductDetail() {
 
   if (!product) return <p>Loading...</p>;
 
-  const modelUrl = product.modelFile ? `http://localhost:5000${product.modelFile}` : null;
+ const modelUrl = product.modelFile ? `https://studio-noir-ar-previewer.onrender.com${product.modelFile}` : null;
   const pageUrl = window.location.href;
 
   return (
